@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*body{
+    background-image: url(voice/back3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+.area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 653px;
+    z-index: -5;
+}
+.area video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main{
+    display: block;
+    position: relative;
+    top: 3rem;
+    left: 12rem;
+    width: 38rem;
+}
+
+.main .place{
+    width: 49%;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    background: linear-gradient(to left, deepskyblue, rgb(28, 50, 250));
+    transition: 2.5s;
+}
+.main .place span{
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.main .place .image{
+    width: 3.2rem;
+    height: 2.2rem;
+}
+.main .place .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+.main .place .country{
+    width: calc(100% - 9rem);
+    padding: .5rem;
+} 
+.main .place .tele, .juri{
+    width: 2.5rem;
+    text-align: center;
+    padding: .5rem 0;
+}
+.main .place .tele{
+    font-size: .8rem;
+    padding-top: .6rem;
+    opacity: 0;
+    color: blue;
+}
+.main .place .juri{
+    font-size: 1rem;
+}
+
+.main #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11{
+    left: 0;
+}
+
+.main #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19, #div20, #div21{
+    left: 51%;
+}
+
+.main #div1, #div12{
+    top: 0;
+}
+.main #div2, #div13{
+    top: 2.5rem;
+}
+.main #div3, #div14{
+    top: 5rem;
+}
+.main #div4, #div15{
+    top: 7.5rem;
+}
+.main #div5, #div16{
+    top: 10rem;
+}
+.main #div6, #div17{
+    top: 12.5rem;
+}
+.main #div7, #div18{
+    top: 15rem;
+}
+.main #div8, #div19{
+    top: 17.5rem;
+}
+.main #div9, #div20{
+    top: 20rem;
+}
+.main #div10, #div21{
+    top: 22.5rem;
+}
+.main #div11{
+    top: 25rem;
+}
+
+
+.baza{
+    width: 46rem;
+    height: 34.95rem;
+    background: linear-gradient(to right, rgb(34, 25, 170), rgb(70, 199, 250));
+    position: absolute;
+    left: 5rem;
+    top: 2.032rem;
+    opacity: 0;
+    z-index: 50000;
+}
+.baza .bazalar{
+    width: 50%;
+    margin: 2% 0;
+    float: left;
+    position: relative;
+    top: 23rem;
+    transition: 1.3s;
+}
+.baza .bazalar .verilen{
+    width: 90%;
+    margin: 3px 5%;
+    display: inline-block;
+}
+.baza .bazalar .verilen span{
+    display: inline-block;
+    color: rgb(44, 8, 129);
+    padding: 8px;
+}
+.baza .bazalar .verilen .olke{
+    width: calc(100% - 120px);
+    background-color: white;
+    font-weight: 900;
+    border-left: 1px solid black;
+    text-transform: uppercase;
+}
+.baza .bazalar .verilen .bal, .puan{
+    width: 30px;
+    text-align: center;
+}
+.baza .bazalar .verilen .bal{
+    background: rgb(54, 105, 216);
+    color: wheat;
+}
+.baza .bazalar .verilen .puan{
+    background: deepskyblue;
+    font-weight: 900;
+    border-bottom: .1px solid blue;
+}
+
+
+.backrounds{
+    width: 70rem;
+    height: 34.915rem;
+    position: absolute;
+    top: 1.975rem;
+    left: 8rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    background: linear-gradient(blue, deepskyblue, black);
+    z-index: -1;
+    opacity: .65;
+}
+.back-other{
+    opacity: 0;
+    z-index: 2000;
+}
+.back-other .back-child{
+    margin: 5rem auto;
+    width: 2rem;
+    height: 1rem;
+    transition: 1s;
+    transform: scale(45deg);
+}
+.back-other .back-child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video{
+    position: absolute;
+    width: 24rem;
+    height: 25.1rem;
+    left: 52.25rem;
+    top: 3rem;
+}
+.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.given_puan{
+    position: absolute;
+    top: 36.5rem;
+    left: 12rem;
+    width: 33px;
+    padding: 8px 5px;
+    color: white;
+    background: linear-gradient(to right, rgb(25, 8, 140), rgb(45, 90, 170));
+    font-weight: 900;
+    transition: 1s;
+    opacity: 0;
+}
+
+.given_puan img{
+    position: absolute;
+    left: 18px;
+    width: 1.75rem;
+}
+
+.main .given_puan_12{
+    position: absolute;
+    top: 34rem;
+    left: 27.3rem;
+    width: 33px;
+    padding: 8px 5px;
+    color: white;
+    font-weight: 900;
+    transition: 2s;
+    opacity: 0;
+    z-index: 5000;
+}
+.main .given_puan_12 img{
+    position: absolute;
+    left: 18px;
+    width: 1.75rem;
+    transition: 1s;
+}
